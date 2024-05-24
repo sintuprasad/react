@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>pages</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	body {
+		min-height: 100vh;
+		min-width: 100vw;
+		background-color: rgb(198 153 227);
+		padding: 10px;
+	}
+
+	ul li {
+		list-style: none;
+		font-size: 20px;
+		text-transform: capitalize;
+	}
+
+	.flex-center-all {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+	}
+
+	.red {
+		color: red
+	}
+</style>
+
+<body class="flex-center-all">
+	<!-- <pre>
+<b>Adjectives:</b>
+Crazy
+Amazing
+Fire
+
+<b>Shop Name:</b>
+Engine
+Food
+Garments
+
+<b>Another Word:</b>
+Bros
+Limited
+Hub
+</pre>
+ -->
+	<div class="container flex-center-all">
+		<h1 id="h1" class="flex-center-all">Random Name is :</h1>
+		<h3 id="h3"></h3>
+	</div>
+	<ul>
+		<li class="list-item red">one</li>
+		<li class="list-item red">two</li>
+		<li class="list-item red">three</li>
+		<li class="list-item red">four</li>
+	</ul>
+	<button id="yellow" style="padding:5px 10px;font-size: 20px;">Yellow</button>
+	<button id="green" style="padding:5px 10px;font-size: 20px;">Green</button>
+	<div id="root" style="font-size: large; margin: 50px; color: #fff;"></div>
+	<script src="main.js"></script>
+	<script>
+		/* const list = document.querySelectorAll('ul>li');
+		list.forEach((item)=>item.style.color="red")
+		const listClass = document.getElementsByClassName("list-item");
+		let addList = Array.from(listClass).forEach((val)=>val.style.color="green");
+		 */
+		// normal function divarse all tree before adding value
+		/* function addLang(lang){
+		   const li = document.createElement('li');
+		   li.innerHTML=lang;
+		   document.querySelector('ul').append(li)
+		} */
+		// DSA CONCEPT
+		/* function addLanguage(language) {
+			const li = document.createElement('li');
+			// li.classList.add('list-item',)
+			li.append(document.createTextNode(language))
+			document.querySelector('ul').append(li)
+
+		} */
+		// get and set atrribute of class
+		/* function addLanguage(lang){
+			const copyAttr= document.querySelector("ul>li").getAttribute('class')
+			const li = document.createElement('li');
+			li.setAttribute('class',copyAttr) //(color:red)
+			li.append(document.createTextNode(lang))
+			document.querySelector('ul').append(li)
+		}
+		 */
+		/* 
+				addLanguage("sintu");
+				addLanguage("jyoti");
+				addLanguage("tannu"); 
+				*/
+
+
+	</script>
+
+
+</body>
+
+</html>

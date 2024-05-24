@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="list">
+        <h1>Projects</h1>
+        <a href="#pro1">Color Change</a>
+        <a href="#pro2">BMI Generator</a>
+        <a href="#pro3"> Digital Clock</a>
+        <a href="#pro4">Guess the Number</a>
+        <a href="#pro5"> Color Change</a>
+        <a href="#pro6">Keyboar Check</a>
+        <a href="#pro7">Avatar</a>
+    </div>
+    <div class="view">
+        <!-- project one - color change -->
+        <div id="pro1" class="pro1">
+            <h1>Color Scheme Switcher</h1>
+            <div class="colors">
+                <div class="box" style="background-color: rgb(117, 117, 225)"></div>
+                <div class="box" style="background-color: rgb(225, 225, 117)"></div>
+                <div class="box" style="background-color: rgb(225, 117, 117)"></div>
+                <div class="box" style="background-color: rgb(117, 225, 225)"></div>
+            </div>
+            <p>Try clicking on One of the color box above to change the background color of this page !</p>
+            <button id="reset">Reset</button>
+        </div>
+        <!-- project two - BMI Generator -->
+        <div id="pro2" class="pro2">
+            <h1>BMI Calculator</h1>
+            <label for="weight">Weight in KG : <input type="number" name="" id="weight" required></label>
+            <label for="height">Height in CM : <input type="number" name="" id="height" required></label>
+            <input type="submit" id="submit" value="Calculate"> <span id="output">BMI : </span>
+            <!-- <input type="range" id="range" value="0"> -->
+            <div class="guide">
+                <h3>BMI Weight Guide</h3>
+                <p>Under weight = Less than 18.6</p>
+                <p>Normal range = 18.6 and 24.6</p>
+                <p>Over weight = Greater than 24.9</p>
+            </div>
+        </div>
+        <!-- project three - Digital Clock -->
+        <div id="pro3" class="pro3">
+            <h1>Digital Clock</h1>
+            <div class="container">
+                <div class="items time"></div>
+                <div class="items date"></div>
+                <div class="items day">
+                    <span>sun</span>
+                    <span>mon</span>
+                    <span>tue</span>
+                    <span>wed</span>
+                    <span>thu</span>
+                    <span>fri</span>
+                    <span>sat</span>
+                </div>
+            </div>
+        </div>
+        <!-- project four - Guess the Number -->
+        <div id="pro4" class="pro4">
+            <h1>Guess the Number ( 1 to 10 )</h1>
+            <input type="number" id="guess" placeholder="Enter 1 - 10">
+            <button type="submit" id="check">Check</button>
+            <p>Guess chance : <span id="chance">5</span></p>
+            <p>Your guess is Too : <span id="predict">High / Low</span></p>
+            <p>You Enterd : <span id="enterd"></span></p>
+            <button id="restart" class="restart" onclick="restartGame()">-: Restart the Game :-</button>
+            <!-- <p id="demo"></p> -->
+        </div>
+        <!-- project Five - Color Change -->
+        <div id="pro5" class="pro5">
+            <div class="main" id="timestart">
+                <h1>Chai aur Javascript</h1>
+                <span id="time"></span>
+                <div class="items">
+                    <button id="start">Start</button>
+                    <button id="stop">Stop</button>
+                </div>
+            </div>
+        </div>
+        <!-- project Six - Keyboard Check -->
+        <div id="pro6" class="pro6">
+            <div class="main" id="main">
+                <h1>Enterd Key</h1>
+                <textarea name="" id="print"></textarea>
+                <!-- <span id="print"></span> -->
+            </div>
+        </div>
+
+        <!-- project Seven - API -->
+        <div id="pro7" class="pro7">
+            <div class="main evenly" id="main">
+                <img src="brand.png" alt="avatar" class="avatar" id="avatar">
+                <h1 id="name">Name</h1>
+                <h5>followers : <span id="followers">000</span></h5>
+                <p id="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, adipisci.</p>
+            </div>
+            <div class="main loading" id="loading">
+                <div class="loader"></div>
+                <p>loading...</p>
+            </div>
+
+        </div>
+
+
+        <!-- project Eight - ...... -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <script src="main.js">
+    </script>
+</body>
+
+</html>
+<!-- Assignment fetch data from url and show web page
+name
+avatar_url
+followers
+bio description -->
